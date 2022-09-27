@@ -1,72 +1,86 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width-device,initial-scale=1" />
+        <meta charset="UTF-8" name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0"/>
         <link rel="stylesheet" href="assets/css/style.css">
         <title>My Portfolio - Juana Maldonado</title>
     </head>
     <body>
+        <!------------------Navbar---------------->  
         <header>
-            <h1>Juana Maldonado</h1>
-          <!------------------Navbar---------------->  
-          <nav> 
-            <ul class="nav-links">
-                <li>
-                    <a href="#About Me">About Me</a>
-                </li>
-                <li>
-                    <a href="#Work">Work</a>
-                </li>
-                <li>
-                    <a href="#Resume">Resume</a>
-                </li>
-                <li>
-                    <a href="#Contact Me">Contact Me</a>
-                </li>
-            </ul>
-        </nav>      
-        </header>     
+            <div class="container-nav">
+                <div class="titles">
+                    <h1>Juana Maldonado</h1>
+                    <p class="subtitle">Portfolio</p>
+                </div>        
+                <nav> 
+                    <ul>
+                        <li><a href="#About Me">About Me</a></li>
+                        <li><a href="#Work">Work</a></li>
+                        <li><a href="#Contact Me">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>      
+        </header>    
+        <!-------------------------Hero----------------------------> 
         <div class="hero">
             <img src="/assets/images/Hero Neutral background.jpeg" alt="neutral color image" style="width:100%;">
-            <div class="hero-text">Bottom Left</div>
+            <div class="hero-text">Welcome!</div>
           </div>
         <main>
-            <div  class="about-me-container">
-                <h2 id="About-Me"> About Me</h2>
-                    <img src="assets/images/DSC03786.JPG" alt="photo of Juana Maldonado" width="200" height="300">
-                    <p>
-                        Hello, my name is Juana! I was born and raised in Salt Lake City, Utah. My parents are from Guanajuato, Mexico which we visit every year. I am the oldest of 4, with 2 sisters and 1 brother. I am the proud dog mom of a 3 year old chocolate lab named Mylo. He keeps me very busy and active! We enjoy going on walks and hiking, especially in the fall. 
-                    </p>
-                    
+         <!---------------------About Me-------------------->   
+            <div id="About Me"class="about-me">
+                <h2>About Me</h2>
+                   <p> Hello! My name is Juana Maldonado  </p>
+                   <p> jkfla djfkld;ajfkdghkf; jaflk;</p>
             </div> 
-            <div class="work-container">
-                <h2 id="Work">Work</h2>
+            
+          <!----------------------------flexbox--------------------------------->  
+            <div id="work" class="work">
+                <h2>Work</h2>
                     <div class="Horiseon">
-                        <h3><a href="https://jm1211.github.io/01-horiseon-seo-challenge-/">Horiseon</a></h3>
-                        <img src="assets/images/Screenshot 1.png" alt="screenshot of website" width="400px" height="400px">
+                        <a href="https://jm1211.github.io/01-horiseon-seo-challenge-/">
+                        <img class="big" src="assets/images/Screenshot 1.png" alt="screenshot of website" width="300px" height="400px"/>
+                        <div class="text-block">
+                            <h3>Horiseon</h3>
+                        </div>
+                        </a>
                     </div>
                     <div class="Calendar">
-                        <h3><a href="#">Calendar App</a></h3>
-                        <img src="assets/images/calendar-icon-white-background_1308-84634.webp" alt="calendar app icon" width="100px" height="100px">
+                        <a href="#">
+                        <img class="small" src="assets/images/calendar-icon-white-background_1308-84634.webp" alt="calendar app icon" width="100px" height="100px">
+                        <div class="text-block">
+                            <h3>Calendar</h3>
+                        </div>   
+                        </a>
                     </div>    
                     <div class="Digital-Clock">
-                        <h3><a href="#">Digital Clock</a></h3>
-                        <img src="assets/images/digital-alarm-clock-isolated-icon-free-vector.jpeg" alt="digital clock image" width="100px" height="100px">
+                        <a href="#">
+                        <img class="small" src="assets/images/digital-alarm-clock-isolated-icon-free-vector.jpeg" alt="digital clock image" width="100px" height="100px">
+                        <div class="text-block">
+                            <h3>Digital Clock</h3>
+                        </div>
+                        </a>
                     </div>    
                     <div class="QR-code">
-                        <h3><a href="#">QR Code Generator</a></h3>
-                        <img src="assets/images/QR_code_for_mobile_English_Wikipedia.svg.png" alt="qr code example" width="100px" height="100px">
+                        <a href="#">
+                        <img class="small"src="assets/images/QR_code_for_mobile_English_Wikipedia.svg.png" alt="qr code example" width="100px" height="100px">
+                        <div class="text-block">
+                            <h3>QR Code Generator</h3>
+                        </div>
+                        </a>
                     </div>    
-                    <div class="Dictonary">
-                        <h3><a href="#">Dictionary</a></h3>
-                        <img src="assets/images/unnamed.png" alt="dictionary icon" width="100px" height="100px">
+                    <div class="Dictionary">
+                        <a href="#">
+                        <img class="small" src="assets/images/unnamed.png" alt="dictionary icon" width="100px" height="100px">
+                        <div class="text-block">
+                            <h3>Dictionary</h3>
+                        </div>
+                        </a>
                     </div>        
             </div>  
-            <div class="resume">      
-                <h2 id="Resume">Resume</h2>
-            </div>  
-            <div class="contact-me-container"> 
-                <h2 id="Contact-Me">Contact Me</h2>
+            <div id="contact me" class="contact-me"> 
+                <h2>Contact Me</h2>
                     <ul class="contact-links">
                         <li><a href="tel:777-777-7777">777-777-7777</a></li>
                         <li><a href="mailto:juana_801@yahoo.com">juana_801@yahoo.com</a></li>
